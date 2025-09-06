@@ -3,3 +3,8 @@ data/raw/**
 *.parquet
 *.zip
 *.gz
+data/raw/**
+*.csv
+*.parquet
+*.zip
+*.gz
