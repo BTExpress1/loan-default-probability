@@ -27,4 +27,14 @@ This project is structured into three main notebooks, each serving a distinct ro
 
 📌 **Tip:** Run the notebooks in order (1 → 2 → 3). Artifacts from one notebook (cleaned data, selected features, saved models) feed into the next for full reproducibility.
 
+## Project Setup / Data Handling
+
+## ⚠️ Memory Warning
+
+The raw LendingClub dataset is **large (>2.4 GB compressed, ~6 GB in-memory)**.  
+
+- Always work with the **sample (`loan_default_slim55.parquet`)** during exploration.  
+- The **full dataset (`loan_default_full55.parquet`)** has already been reduced to the same 54 features and saved for you.  
+- **Do not flip `USE_SAMPLE=False` inside Notebook 1** — this will attempt to load the raw CSV and crash most local machines.  
+Instead, rely on the pre-saved parquet files.
 
