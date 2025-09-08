@@ -1,0 +1,31 @@
+{
+    "model": "LightGBM (tuned)",
+    "created_at": "2025-09-07 21:32:44",
+    "best_params": {
+        "model__colsample_bytree": 0.8,
+        "model__learning_rate": 0.1,
+        "model__max_depth": 10,
+        "model__num_leaves": 63,
+        "model__reg_lambda": 0,
+        "model__subsample": 0.8
+    },
+    "cv_best_score": 0.8319141088616056,
+    "test": {
+        "auroc": 0.8335190965319277,
+        "logloss": 0.4959490565417224,
+        "brier": 0.16415729283220978,
+        "best_f1_threshold": 0.6,
+        "precision_at_best_f1": 0.5282425571197784,
+        "recall_at_best_f1": 0.6373033551440902,
+        "f1_at_best_f1": 0.5776705154899363
+    },
+    "final_model": "LGBMClassifier (calibrated isotonic)",
+    "final_test_auc": 0.8335808700775876,
+    "final_test_logloss": 0.3860949391643291,
+    "final_brier": 0.12178150362866039,
+    "final_timestamp": "2025-09-08T10:04:29.167587",
+    "threshold_recommendation": {
+        "primary": 0.3,
+        "fallback": 0.45
+    }
+}
