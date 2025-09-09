@@ -117,7 +117,7 @@ A full processed dataset (`loan_default_full51.parquet`) is already provided.
 ## ⚡ Getting Started
 
 ### 1. Clone the Repository
-```bash
+
 git clone https://github.com/<your-username>/loan-default-probability.git
 cd loan-default-probability
 
